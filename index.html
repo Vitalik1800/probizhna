@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Адаптивний сайт</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="topnav" id="myTopnav">
+				<li><a href="#home" class="active">Головна</a></li>
+				<li><a href="#intro">Інформація про нас</a></li>
+				<li><a href="#wrapper">Зворотній зв'язок</a></li>
+				<li class="icon"><a href="#" onclick="myFunction()">&#9776;</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="posts-list">
+			<article id="post-1" class="post">
+				<div class="post-content">
+					<div class="category"><a href="">Стаття 1</a></div>
+					<h2 class="post-title">Опис статті 1</h2>
+					<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Laborum quasi harum placeat, in dolore facilis totam ut dignissimos id omnis ducimus quidem soluta reprehenderit, non esse numquam. Veniam, veritatis, maxime.
+					Ipsam tempora accusamus modi vitae atque asperiores hic dicta in id. Repellendus ipsum facilis possimus modi. </p>
+					<div class="post-footer">
+						<a class="more-link" href="">Дізнатися більше</a>
+					</div>
+				</div>
+			</article>
+			<article id="post-2" class="post">
+				<div class="post-content">
+					<div class="category"><a href="">Стаття 2</a></div>
+					<h2 class="post-title">Опис статті 2</h2>
+					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Beatae et earum sint ad eaque est velit quod a maiores facere nihil consequuntur aut, laborum quas nesciunt cupiditate veritatis omnis eum.
+					Nostrum, ratione possimus, repellendus mollitia voluptatum est illo atque molestias itaque reiciendis facilis.</p>
+					<div class="post-footer">
+						<a class="more-link" href="">Дізнатися більше</a>
+					</div>
+				</div>
+			</article>
+			<article id="post-3" class="post">
+				<div class="post-content">
+					<div class="category"><a href="">Стаття 3</a></div>
+					<h2 class="post-title">Опис статті 3</h2>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, ratione quo porro, necessitatibus quidem a blanditiis deleniti ducimus, aut aspernatur debitis laudantium maxime nemo et excepturi ex commodi illum molestias.
+					Quidem ipsa quam libero atque earum illum deserunt laboriosam iste similique impedit temporibus fugiat nesciunt reiciendis laborum eaque at eum minus, nostrum numquam vel.</p>
+					<div class="post-footer">
+						<a class="more-link" href="">Дізнатися більше</a>
+					</div>
+				</div>
+			</article>
+		</div>
+		<div class="about">
+			<section class="village">
+				<img src="img/33.jpg" alt="village of Probizhna">
+				<div class="about_content">
+					<p>Пробіжна — село в Україні, Тернопільська область, Чортківський район, Колиндянська сільська громада. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam in obcaecati rerum maiores mollitia nemo incidunt necessitatibus sit pariatur, a nostrum iste eligendi, natus reprehenderit iure cum magni, voluptatem, nesciunt?. Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Sit reiciendis ullam assumenda odio recusandae consequuntur! Non laudantium mollitia laborum laboriosam minus temporibus inventore eum veniam reiciendis ipsa sit odio, nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum necessitatibus sunt vel eum ipsa aperiam quae blanditiis, tempore consequatur, vero. Et qui debitis soluta dolor voluptatibus dignissimos facere consequatur sequi?</p>
+				</div>
+			</section>
+		</div>
+		<div id="wrapper">
+			<div id="leftCol">
+				<p class="g">Email</p><input type="text" placeholder="" id="email" name="email" /><br/>
+				<p class="g">Тема повідомлення</p><input type="text" placeholder="" id="subject" name="subject" /><br/>
+				<p class="g">Повідомлення</p><input type="text" placeholder="" id="textmess" name="textmess" /><br/>
+				<div id="messageShow"></div>
+				<input type="button" name="done" id="done" value="Відправити" />
+			</div>
+		</div>
+		<footer>
+	<div id="social">
+		<a href="http://facebook.com" title="Група Facebook" target="_blank"><img src="img/1.png" alt="Facebook" title="Facebook"></a>
+		<a href="http://instagram.com" title="Група Instagram" target="_blank"><img src="img/2.png" alt="Instagram" title="Instagram"></a>
+		<a href="http://twitter.com" title="Група Twitter" target="_blank"><img src="img/3.png" alt="Twitter" title="Twitter"></a>
+	</div>
+	<div id="rights">
+		Всі права захищені &copy; 2021
+		</div>
+</footer>
+		<script type="text/javascript">
+			function myFunction() {
+				var x = document.getElementById('myTopnav');
+				if(x.className === "topnav"){
+					x.className += " responsive";
+				}
+				else{
+					x.className = "topnav";
+				}	
+			}
+		</script>
+	</body>
+</html>
